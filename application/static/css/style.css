@@ -1,0 +1,324 @@
+/* ===== GLOBAL ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* ===== HOME PAGE ===== */
+
+.home-body{
+    background:
+    linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1400&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+}
+
+.navbar-brand{
+    color:white !important;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-link{
+    color:white !important;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.glass-card{
+    width:100%;
+    max-width:850px;
+    padding:60px;
+    border-radius:30px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.12);
+}
+
+/* ===== FORM PAGE ===== */
+
+.form-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1400&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+}
+
+/* ===== CARDS ===== */
+
+.application-card,
+.enquiry-card{
+
+    width:100%;
+    max-width:850px;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.12);
+
+    box-shadow:0 8px 32px rgba(0,0,0,0.37);
+}
+
+/* ===== BANNER ===== */
+
+.form-banner{
+
+    height:220px;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+}
+
+/* ===== LOGO ===== */
+
+.logo{
+
+    width:80px;
+    height:80px;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#111;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:34px;
+
+    margin-bottom:15px;
+}
+
+/* ===== FORM ===== */
+
+.form-section{
+    padding:45px;
+}
+
+.form-label{
+    color:white;
+}
+
+.form-control,
+.form-select{
+
+    background:rgba(255,255,255,0.08);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    color:white;
+
+    border-radius:14px;
+
+    padding:14px;
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    background:rgba(255,255,255,0.12);
+
+    border:1px solid #00c6ff;
+
+    color:white;
+}
+
+.form-control::placeholder{
+    color:#bbb;
+}
+
+.icon-input{
+    position:relative;
+}
+
+.icon-input i{
+
+    position:absolute;
+
+    right:18px;
+    top:16px;
+
+    color:#bbb;
+}
+
+/* ===== BUTTON ===== */
+
+.submit-btn,
+.btn-custom{
+
+    padding:14px 38px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:
+    linear-gradient(to right,#00c6ff,#0072ff);
+
+    color:white;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.submit-btn:hover,
+.btn-custom:hover{
+
+    transform:translateY(-4px);
+}
+
+/* ===== SUCCESS PAGE ===== */
+
+.success-body{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(135deg,#00b09b,#96c93d);
+}
+
+.success-card{
+
+    max-width:500px;
+
+    padding:60px 40px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(15px);
+
+    color:white;
+
+    text-align:center;
+}
+
+/* ===== CHAT ===== */
+
+.chat-container{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    z-index:999;
+}
+
+.chat-button{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:linear-gradient(to right,#00c6ff,#0072ff);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.chat-box{
+    width:320px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    position:absolute;
+    bottom:90px;
+    right:0;
+    display:none;
+}
+
+.chat-header{
+    background:linear-gradient(to right,#0072ff,#00c6ff);
+    color:white;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.chat-body{
+    padding:20px;
+    background:#f8f9fa;
+}
+
+.quick-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.quick-buttons button{
+    border:none;
+    padding:10px;
+    border-radius:10px;
+    background:#0072ff;
+    color:white;
+}
+
+.message{
+    padding:12px;
+    border-radius:12px;
+    margin-bottom:10px;
+}
+
+.bot{
+    background:#e9ecef;
+}
